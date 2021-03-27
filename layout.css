@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    font-size: 14px;
+    color: white;
+    background-image: url("images/solarSystemHUB.jpg");
+    background-color: black;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+    position: sticky;
+}
