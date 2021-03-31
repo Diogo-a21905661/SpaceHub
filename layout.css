@@ -1,16 +1,231 @@
 * {
+    /* Feito para o layout responsivo */
     box-sizing: border-box;
+
+    /*Definir a familia, o tamanho e as cores do texto */
     font-family: fantasy;
     font-size: 14px;
     color: white;
+}
+
+/*Definir a imagem de background e as suas propriedades */
+body {
     background-image: url("images/solarSystemHUB.jpg");
     background-color: black;
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-h1 {
-    color: white;
-    font-size: 28px;
-    position: sticky;
+/*Background shadow */
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*Flexbox utilizado para a HUB */
+#gridHub {
+    display: grid;
+    grid-template-columns: 15% 10% 15% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 90%;
+    grid-row-gap: 100px;
+}
+
+header {
+    text-align: center;
+}
+
+/*Definir o tamanho do titulo */
+h1, header {
+    font-size: 32px;
+}
+
+.planet {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Definir a localização dos planetas e suas transições */
+
+.hide {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+}
+
+/* Mercury */
+#mercury {
+    width: 65px;
+    top: 494px;
+    left: 258px;
+    transition: width 2s;
+}
+
+#mercury:hover {
+    width: 100px;
+}
+
+.hideMercury {
+    top: 455px;
+    left: 255px;
+}
+  
+#mercury:hover + .hideMercury {
+    display: block;
+}
+
+/* Venus */
+#venus {
+    width: 100px;
+    top: 435px;
+    left: 345px;
+    transition: width 2s;
+}
+
+#venus:hover {
+    width: 145px;
+}
+
+.hideVenus {
+    top: 400px;
+    left: 365px;
+}
+  
+#venus:hover + .hideVenus {
+    display: block;
+}
+
+/* Earth */
+#earth {
+    width: 70px;
+    top: 378px;
+    left: 472px;
+    transition: width 2s;
+}
+
+#earth:hover {
+    width: 115px;
+}
+
+.hideEarth {
+    top: 340px;
+    left: 480px;
+}
+  
+#earth:hover + .hideEarth {
+    display: block;
+}
+
+/* Mars */
+#mars {
+    width: 60px;
+    top: 315px;
+    left: 556px;
+    transition: width 2s;
+}
+
+#mars:hover {
+    width: 105px;
+}
+
+.hideMars {
+    top: 275px;
+    left: 556px;
+}
+  
+#mars:hover + .hideMars {
+    display: block;
+}
+
+/* Jupiter */
+#jupiter {
+    width: 185px;
+    top: 280px;
+    left: 690px;
+    transition: width 2s;
+}
+
+#jupiter:hover {
+    width: 250px;
+}
+
+.hideJupiter {
+    top: 245px;
+    left: 720px;
+}
+  
+#jupiter:hover + .hideJupiter {
+    display: block;
+}
+
+/* Saturn */
+#saturn {
+    width: 300px;
+    top: 200px;
+    left: 815px;
+    transition: width 2s;
+}
+
+#saturn:hover {
+    width: 355px;
+}
+
+.hideSaturn {
+    top: 160px;
+    left: 880px;
+}
+  
+#saturn:hover + .hideSaturn {
+    display: block;
+}
+
+/* Uranus */
+#uranus {
+    width: 120px;
+    top: 120px;
+    left: 1065px;
+    transition: width 2s;
+}
+
+#uranus:hover {
+    width: 160px;
+}
+
+.hideUranus {
+    top: 100px;
+    left: 1050px;
+}
+  
+#uranus:hover + .hideUranus {
+    display: block;
+}
+
+/* Neptune */
+#neptune {
+    width: 90px;
+    top: 80px;
+    left: 1200px;
+    transition: width 2s;
+}
+
+#neptune:hover {
+    width: 135px;
+}
+
+.hideNeptune {
+    top: 40px;
+    left: 1190px;
+}
+  
+#neptune:hover + .hideNeptune {
+    display: block;
 }
