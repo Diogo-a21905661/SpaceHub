@@ -1,0 +1,168 @@
+* {
+    /* Feito para o layout responsivo */
+    box-sizing: border-box;
+
+    /*Definir a familia, o tamanho e as cores do texto */
+    font-family: fantasy;
+    font-size: 14px;
+    color: white;
+}
+
+/*Definir o tamanho do titulo */
+h1 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+
+    z-index: 0;
+    background-color: grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-style: dotted;   
+    border-width: 3px;
+    border-color: black;
+}
+
+/* Opções de movimentação para o titulo */
+.keepLeft {
+    float: left;
+}
+
+.keepRight {
+    float: right;
+}
+
+/* CSS Grid e Flexbox do Planet */
+header {
+    grid-area: header;
+    background-color: #6f2232;
+    
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+
+    padding-bottom: 25px;
+}
+
+header > figure > img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main {
+    grid-area: main; 
+    background-color: #1a1a1d;
+    
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+
+    padding: 25px;
+}
+
+/*Spaces between texts */
+main section {
+    padding: 25px;
+}
+
+main section h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+main section p {
+    color: grey;
+}
+
+nav {
+    grid-area: nav; 
+    background-color: #6f2232;
+
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+nav > section {
+    height: 42px;
+    width: 300px;
+
+    border-style: solid;   
+    border-width: 1px;
+    border-color: black;
+    background-color: grey;
+}
+
+body {
+    display: grid;
+    width: 98vw;
+    height: 97.8vh;
+    grid-template-rows: 23% 77%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    'header nav nav'
+    'header main main'
+    'header main main';
+    background-color: #1a1a1d;
+}
+
+/* Align all text in the planet pages at the center */
+
+body > * {
+    text-align: center; 
+}
+
+/* Dropdown menu */
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none; 
+    background-color: #501b1d;
+
+    margin: 0;
+    padding: 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+nav > ul > li ul {
+    display: none;
+}
+
+nav ul li { 
+    display: inline;
+    position: relative;
+}
+
+nav a {
+    display: inline-block; 
+    padding: 5px 10px; 
+    text-decoration: none; 
+    white-space: nowrap; 
+}
+
+nav a:hover {
+    background-color: grey;
+}
+
+nav > ul li:hover > ul { 
+    display: block; 
+    position: absolute; 
+    top: 0;
+    left: 100%;
+}
+
+nav > ul > li:hover > ul { 
+    display: block; 
+    position: absolute; 
+    top: calc(1em + 5px); 
+    left: 0%;
+}

@@ -8,8 +8,21 @@
     color: white;
 }
 
-/*Definir a imagem de background e as suas propriedades */
-body {
+.keepCenter {
+    float: center;
+    text-align: center;
+}
+
+/*CSS Grid utilizado para a HUB */
+#gridHub {
+    display: grid;
+    grid-template-columns: 15% 10% 15% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 90%;
+    grid-row-gap: 100px;
+}
+
+/*Definir a imagem de background da HUB e as suas propriedades */
+.backgroundHub {
     background-image: url("images/solarSystemHUB.jpg");
     background-color: black;
     background-size: cover;
@@ -17,7 +30,7 @@ body {
     background-attachment: fixed;
 }
 
-/*Background shadow */
+/*Background shadow for HUB */
 .backdrop {
     position: fixed;
     z-index: 1;
@@ -26,18 +39,6 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-}
-
-/*Flexbox utilizado para a HUB */
-#gridHub {
-    display: grid;
-    grid-template-columns: 15% 10% 15% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10% 90%;
-    grid-row-gap: 100px;
-}
-
-header {
-    text-align: center;
 }
 
 /*Definir o tamanho do titulo */
@@ -229,3 +230,5 @@ h1, header {
 #neptune:hover + .hideNeptune {
     display: block;
 }
+
+/* End of CSS Files for the HUB and for Planets */
