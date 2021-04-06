@@ -20,8 +20,7 @@ h1 {
 
     z-index: 0;
     background-color: grey;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 8.5%;
 
     border-style: dotted;   
     border-width: 3px;
@@ -48,7 +47,7 @@ header {
 }
 
 header > img {
-    height: fit-content;
+    height: auto;
 }
 
 main {
@@ -79,6 +78,17 @@ main section p {
 nav {
     grid-area: nav; 
     background-color: #6f2232;
+
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Teste */
+
+.title {
+    grid-area: title;
+    background-color: grey;
 
     border: black;
     border-style: solid;
