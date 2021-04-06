@@ -47,7 +47,7 @@ h1, header {
 }
 
 .planet {
-    position: relative;
+    position: absolute;
 
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -60,7 +60,7 @@ h1, header {
 
 .hide {
     display: none;
-    position: relative;
+    position: absolute;
 
     z-index: 2;
     font-size: 20px;
@@ -68,21 +68,21 @@ h1, header {
 
 /* Sun */
 #sun {
-    width: 300px;
+    width: 21%;
 
-    top: 60px;
-    left: 75px;
+    top: 50%;
+    left: 2%;
 
     transition: width 2s;
 }
 
 #sun:hover {
-    width: 350px;
+    width: 23%;
 }
 
 .hideSun {
-    top: 10px;
-    left: 190px;
+    top: 42%;
+    left: 10%;
 }
   
 #sun:hover + .hideSun {
@@ -91,19 +91,21 @@ h1, header {
 
 /* Mercury */
 #mercury {
-    width: 65px;
-    top: 450px;
-    left: 230px;
+    width: 5%;
+
+    top: 70%;
+    left: 27%;
+
     transition: width 2s;
 }
 
 #mercury:hover {
-    width: 100px;
+    width: 7%;
 }
 
 .hideMercury {
-    top: 415px;
-    left: 235px;
+    top: 65%;
+    left: 27%;
 }
   
 #mercury:hover + .hideMercury {
@@ -112,19 +114,21 @@ h1, header {
 
 /* Venus */
 #venus {
-    width: 100px;
-    top: 435px;
-    left: 345px;
+    width: 8%;
+
+    top: 62%;
+    left: 32%;
+
     transition: width 2s;
 }
 
 #venus:hover {
-    width: 145px;
+    width: 10%;
 }
 
 .hideVenus {
-    top: 400px;
-    left: 365px;
+    top: 57%;
+    left: 34%;
 }
   
 #venus:hover + .hideVenus {
@@ -133,19 +137,21 @@ h1, header {
 
 /* Earth */
 #earth {
-    width: 70px;
-    top: 378px;
-    left: 472px;
+    width: 5%;
+
+    top: 60%;
+    left: 40%;
+
     transition: width 2s;
 }
 
 #earth:hover {
-    width: 115px;
+    width: 7%;
 }
 
 .hideEarth {
-    top: 340px;
-    left: 480px;
+    top: 55%;
+    left: 41%;
 }
   
 #earth:hover + .hideEarth {
@@ -154,19 +160,21 @@ h1, header {
 
 /* Mars */
 #mars {
-    width: 60px;
-    top: 315px;
-    left: 570px;
+    width: 4%;
+
+    top: 58%;
+    left: 47%;
+
     transition: width 2s;
 }
 
 #mars:hover {
-    width: 105px;
+    width: 6%;
 }
 
 .hideMars {
-    top: 275px;
-    left: 576px;
+    top: 52.5%;
+    left: 47%;
 }
   
 #mars:hover + .hideMars {
@@ -175,19 +183,21 @@ h1, header {
 
 /* Jupiter */
 #jupiter {
-    width: 185px;
-    top: 280px;
-    left: 690px;
+    width: 13%;
+
+    top: 43%;
+    left: 53%;
+
     transition: width 2s;
 }
 
 #jupiter:hover {
-    width: 250px;
+    width: 16%;
 }
 
 .hideJupiter {
-    top: 245px;
-    left: 720px;
+    top: 39%;
+    left: 55%;
 }
   
 #jupiter:hover + .hideJupiter {
@@ -196,19 +206,21 @@ h1, header {
 
 /* Saturn */
 #saturn {
-    width: 300px;
-    top: 200px;
-    left: 815px;
+    width: 18%;
+
+    top: 39%;
+    left: 64%;
+
     transition: width 2s;
 }
 
 #saturn:hover {
-    width: 355px;
+    width: 22%;
 }
 
 .hideSaturn {
-    top: 160px;
-    left: 880px;
+    top: 34%;
+    left: 69%;
 }
   
 #saturn:hover + .hideSaturn {
@@ -217,19 +229,21 @@ h1, header {
 
 /* Uranus */
 #uranus {
-    width: 120px;
-    top: 120px;
-    left: 1065px;
+    width: 8%;
+
+    top: 28%;
+    left: 82%;
+
     transition: width 2s;
 }
 
 #uranus:hover {
-    width: 160px;
+    width: 12%;
 }
 
 .hideUranus {
-    top: 100px;
-    left: 1050px;
+    top: 26%;
+    left: 81%;
 }
   
 #uranus:hover + .hideUranus {
@@ -238,19 +252,21 @@ h1, header {
 
 /* Neptune */
 #neptune {
-    width: 90px;
-    top: 80px;
-    left: 1200px;
+    width: 6%;
+
+    top: 20%;
+    left: 90%;
+
     transition: width 2s;
 }
 
 #neptune:hover {
-    width: 135px;
+    width: 10%;
 }
 
 .hideNeptune {
-    top: 40px;
-    left: 1190px;
+    top: 15%;
+    left: 90%;
 }
   
 #neptune:hover + .hideNeptune {
