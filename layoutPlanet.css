@@ -17,14 +17,6 @@ h1 {
     font-size: 32px;
     font-style: italic;
     font-weight: bold;
-
-    z-index: 0;
-    background-color: grey;
-    padding: 8.5%;
-
-    border-style: dotted;   
-    border-width: 3px;
-    border-color: black;
 }
 
 /* Opções de movimentação para o titulo */
@@ -84,15 +76,17 @@ nav {
     border-width: 1px;
 }
 
-/* Teste */
+/* Feito para centrar o titulo corretamente com o menu de navegação */
 
 .title {
     grid-area: title;
     background-color: grey;
 
-    border: black;
-    border-style: solid;
-    border-width: 1px;
+    border-style: dotted;   
+    border-width: 3px;
+    border-color: black;
+
+    padding: 7.5%;
 }
 
 body {
@@ -102,7 +96,7 @@ body {
     grid-template-rows: 20% 80%;
     grid-template-columns: 40% 60%;
     grid-template-areas:
-    'header nav nav'
+    'title nav nav'
     'header main main'
     'header main main';
     background-color: #1a1a1d;
