@@ -89,8 +89,8 @@ h1, header {
 /* Mercury */
 #mercury {
     width: 65px;
-    top: 494px;
-    left: 258px;
+    top: 450px;
+    left: 230px;
     transition: width 2s;
 }
 
@@ -99,8 +99,8 @@ h1, header {
 }
 
 .hideMercury {
-    top: 455px;
-    left: 255px;
+    top: 415px;
+    left: 235px;
 }
   
 #mercury:hover + .hideMercury {
@@ -153,7 +153,7 @@ h1, header {
 #mars {
     width: 60px;
     top: 315px;
-    left: 556px;
+    left: 570px;
     transition: width 2s;
 }
 
@@ -163,7 +163,7 @@ h1, header {
 
 .hideMars {
     top: 275px;
-    left: 556px;
+    left: 576px;
 }
   
 #mars:hover + .hideMars {
