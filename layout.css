@@ -23,7 +23,7 @@
 
 /*Definir a imagem de background da HUB e as suas propriedades */
 .backgroundHub {
-    background-image: url("images/solarSystemHUB.jpg");
+    background-image: url("images/spaceNew.jpg");
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,6 +61,29 @@ h1, header {
     position: absolute;
     z-index: 2;
     font-size: 20px;
+}
+
+/* Sun */
+#sun {
+    width: 300px;
+
+    top: 60px;
+    left: 75px;
+
+    transition: width 2s;
+}
+
+#sun:hover {
+    width: 350px;
+}
+
+.hideSun {
+    top: 10px;
+    left: 190px;
+}
+  
+#sun:hover + .hideSun {
+    display: block;
 }
 
 /* Mercury */
