@@ -21,6 +21,14 @@
     grid-row-gap: 100px;
 }
 
+/* Rotate planets fully */
+.rotate {
+    animation:spin 64s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+
 /*Definir a imagem de background da HUB e as suas propriedades */
 .backgroundHub {
     background-image: url("images/spaceNew.jpg");
@@ -70,7 +78,7 @@ h1, header {
 #sun {
     width: 21%;
 
-    top: 50%;
+    top: 49%;
     left: 2%;
 
     transition: width 2s;
