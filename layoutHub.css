@@ -8,17 +8,19 @@
     color: white;
 }
 
+aside {
+    position: absolute;
+
+    width: 50%;
+    height: 50%;
+
+    top: 13%;
+    left: 28%;
+}
+
 .keepCenter {
     float: center;
     text-align: center;
-}
-
-/*CSS Grid utilizado para a HUB */
-#gridHub {
-    display: grid;
-    grid-template-columns: 15% 10% 15% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10% 90%;
-    grid-row-gap: 100px;
 }
 
 /* Rotate planets fully */
@@ -27,7 +29,6 @@
 }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-
 
 /*Definir a imagem de background da HUB e as suas propriedades */
 .backgroundHub {
@@ -282,3 +283,237 @@ h1, header {
 }
 
 /* End of CSS Files for the HUB and for Planets */
+
+/* Design responsivo para Telefone e para Tablet */
+@media only screen and (max-width: 768px) {
+    /*Definimos o CSS Grid de novo para o tablet e telefone */
+    body {
+        height: 100%;
+        width: 50%;
+    }
+
+    aside {
+        position: absolute;
+
+        top: 13.5%;
+        left: 12%;
+    }
+
+    aside > p {
+        text-align: center;
+        float: center;
+
+        width: 150%;
+    }
+
+    /* Sun */
+    #sun {
+        width: 35%;
+
+        top: 44%;
+        left: 2%;
+
+        transition: width 2s;
+    }
+
+    #sun:hover {
+        width: 38%;
+    }
+
+    .hideSun {
+        top: 55%;
+        left: 42%;
+    }
+    
+    #sun:hover + .hideSun {
+        display: block;
+    }
+
+    /* Mercury */
+    #mercury {
+        width: 13%;
+
+        top: 78%;
+        left: 23%;
+
+        transition: width 2s;
+    }
+
+    #mercury:hover {
+        width: 16%;
+    }
+
+    .hideMercury {
+        top: 78.5%;
+        left: 37%;
+    }
+    
+    #mercury:hover + .hideMercury {
+        display: block;
+    }
+
+    /* Venus */
+    #venus {
+        width: 12%;
+
+        top: 87.5%;
+        left: 30%;
+
+        transition: width 2s;
+    }
+
+    #venus:hover {
+        width: 14%;
+    }
+
+    .hideVenus {
+        top: 88%;
+        left: 43%;
+    }
+    
+    #venus:hover + .hideVenus {
+        display: block;
+    }
+
+    /* Earth */
+    #earth {
+        width: 12%;
+
+        top: 97%;
+        left: 35%;
+
+        transition: width 2s;
+    }
+
+    #earth:hover {
+        width: 14%;
+    }
+
+    .hideEarth {
+        top: 98%;
+        left: 49.5%;
+    }
+    
+    #earth:hover + .hideEarth {
+        display: block;
+    }
+
+    /* Mars */
+    #mars {
+        width: 10%;
+
+        top: 109%;
+        left: 45%;
+
+        transition: width 2s;
+    }
+
+    #mars:hover {
+        width: 12%;
+    }
+
+    .hideMars {
+        top: 109%;
+        left: 58%;
+    }
+    
+    #mars:hover + .hideMars {
+        display: block;
+    }
+
+    /* Jupiter */
+    #jupiter {
+        width: 20%;
+
+        top: 118%;
+        left: 52%;
+
+        transition: width 2s;
+    }
+
+    #jupiter:hover {
+        width: 22%;
+    }
+
+    .hideJupiter {
+        top: 123%;
+        left: 42%;
+    }
+    
+    #jupiter:hover + .hideJupiter {
+        display: block;
+    }
+
+    /* Saturn */
+    #saturn {
+        width: 22%;
+
+        top: 138%;
+        left: 60%;
+
+        transition: width 2s;
+    }
+
+    #saturn:hover {
+        width: 24%;
+    }
+
+    .hideSaturn {
+        top: 138.5%;
+        left: 50%;
+    }
+    
+    #saturn:hover + .hideSaturn {
+        display: block;
+    }
+
+    /* Uranus */
+    #uranus {
+        width: 11%;
+
+        top: 150%;
+        left: 75%;
+
+        transition: width 2s;
+    }
+
+    #uranus:hover {
+        width: 13%;
+    }
+
+    .hideUranus {
+        top: 152.5%;
+        left: 63%;
+    }
+    
+    #uranus:hover + .hideUranus {
+        display: block;
+    }
+
+    /* Neptune */
+    #neptune {
+        width: 10%;
+
+        top: 164%;
+        left: 82%;
+
+        transition: width 2s;
+
+        padding-bottom: 10%;
+    }
+
+    #neptune:hover {
+        width: 12%;
+    }
+
+    .hideNeptune {
+        top: 165.5%;
+        left: 68%;
+    }
+    
+    #neptune:hover + .hideNeptune {
+        display: block;
+    }
+
+    /* End of CSS Files for the HUB and for Planets */
+}
