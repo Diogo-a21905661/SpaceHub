@@ -29,7 +29,9 @@ aside {
     animation:spin 64s linear infinite;
 }
 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
 
 /*Definir a imagem de background da HUB e as suas propriedades */
 .backgroundHub {
@@ -56,6 +58,7 @@ h1, header {
     font-size: 1.75em;
 }
 
+/*Define the planet class as to make them stand out from the background */
 .planet {
     position: absolute;
 
@@ -68,6 +71,7 @@ h1, header {
 
 /*Definir a localização dos planetas e suas transições */
 
+/*Hide the planet name before they are hovered over */
 .hide {
     display: none;
     position: absolute;

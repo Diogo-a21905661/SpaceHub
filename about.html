@@ -11,39 +11,80 @@
 </head>
 <body>
     <aside class="title">
-        <h1>About (Information)</h1>
+        <h1>Earth</h1>
     </aside>
     <header>
         <figure>
-            <img src="images/solarSystem.png" alt="Solar System" max-width="100%" height="100%">
-        </figure>
+            <img src="images/wordcloudSolarSystem.jpg" alt="Wordcloud about the Solar System" max-width="100%" height="100%">
+            <figcapton>Wordcloud of the Solar System</figcapton>
+        </figure>   
+
+        <figure class="extraImage">
+            <img src="images/solarSystemAbout.jpg" alt="Solar System" width="100%" height="100%">
+            <figcapton>Solar System</figcapton>
+        </figure>   
     </header>
 
     <main>
         <section>
-            <p>Info about Website</p>
+            <h3>Planet Gallery</h3>
+            <p>The most beautiful pictures of our solar system, all in one accessible gallery!</p>
+
+            <section class="flex-planet-gallery"> 
+                <img src="images/sun.jpg" alt="Picture of Sun" width="50%" height="100%">
+                <img src="images/earth.jpg" alt="Picture of Earth" width="50%" height="50%">
+                <img src="images/mars.jpg" alt="Picture of Mars" width="50%" height="50%">
+                <img src="images/neptune.jpg" alt="Picture of Neptune" width="50%" height="50%">   
+                <img src="images/jupiter.jpg" alt="Picture of Jupiter" width="50%" height="50%">
+            </section>
+        </section>
+
+        <section>
+            <h3>Wordcloud</h3>
+            <p>A bonus wordcloud, with added links to each page, based on the planets, on top of the words!</p>
+
+            <figure></figure>
+                <svg>
+                    <a href="index.html">
+                        <image href="images/wordcloudSolarSystem.jpg" width="100%" height="100%"></image>
+                    </a>
+                    <a href="local.html">
+                        <polygon opacity="0.01" points="104,24 141,34 123,126 92,117"/>
+                    </a>
+                    <a href="multimedia.html">
+                        <polygon opacity="0.01" points="138,56 183,57 215,82 134,81"/>
+                    </a>
+                    <a href="info.html">
+                        <polygon opacity="0.01" points="142,31 171,32 172,56 138,56"/>
+                    </a>
+                    <a href="quizz.html">
+                        <polygon opacity="0.01" points="134,82 196,82 162,140 131,113"/>
+                    </a>
+                </svg>
+            </figure>
         </section>
     </main>
 
     <nav>
         <li class="infoTab">
-            <a href="index.html">Hub</a>
+            <a href="index.html" class="mainButton">Hub</a>
         </li>
         <li class="infoTab">
-            <a href="about.html">About</a>
+            <a href="about.html" class="mainButton">About</a>
         </li>
         <ul>
             <li>
-                <a href="planets/sun.html">Solar System</a>
+                <a href="" class="biggerFont mainButton">Solar System</a>
                 <ul>
-                    <li><a href="planets/mercury.html">Mercury</a></li>
-                    <li><a href="planets/venus.html">Venus</a></li>
-                    <li><a href="planets/earth.html">Earth</a></li>
-                    <li><a href="planets/mars.html">Mars</a></li>
-                    <li><a href="planets/jupiter.html">Jupiter</a></li>
-                    <li><a href="planets/saturn.html">Saturn</a></li>
-                    <li><a href="planets/uranus.html">Uranus</a></li>
-                    <li><a href="planets/neptune.html">Neptune</a></li>
+                    <li><a href="planets/sun.html" class="button">The Sun</a></li>
+                    <li><a href="planets/mercury.html" class="button">Mercury</a></li>
+                    <li><a href="planets/venus.html" class="button">Venus</a></li>
+                    <li><a href="planets/earth.html" class="button">Earth</a></li>
+                    <li><a href="planets/mars.html" class="button">Mars</a></li>
+                    <li><a href="planets/jupiter.html" class="button">Jupiter</a></li>
+                    <li><a href="planets/saturn.html" class="button">Saturn</a></li>
+                    <li><a href="planets/uranus.html" class="button">Uranus</a></li>
+                    <li><a href="planets/neptune.html" class="button">Neptune</a></li>
                 <ul>  
             </li>
         </ul>

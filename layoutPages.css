@@ -30,6 +30,8 @@ h1 {
 }
 
 /* CSS Grid e Flexbox do Planet */
+
+/*Define the planet picture in CSS Grid and Flexbox */
 header {
     grid-area: header;
     background-color: black;
@@ -39,6 +41,7 @@ header {
     border-width: 3px;
 }
 
+/*Make sure the image is formatted correctly and add some padding to the top as to not stick to border */
 header > figure > img {
     width: 100%;
     height: 100%;
@@ -52,7 +55,7 @@ main {
     background-color: #1a1a1d;
     
     border: black;
-    border-style: solid;
+    border-style: dotted;
     border-width: 1px;
 }
 
@@ -67,15 +70,18 @@ main section p {
     color: grey;
 }
 
-main section p ~ p {
-    padding-top: 3%;
-}
-
+/*Define sub-title */
 main section h3 {
     font-size: 1.5em;
     font-style: italic;
 }
 
+/*Add a bit of a break after a sub-title */
+main section h3 ~ p {
+    padding-top: 1%;
+}
+
+/*Define the navigation menu in CSS Grid and Flexbox */
 nav {
     grid-area: nav; 
     background-color: #6f2232;
@@ -86,7 +92,7 @@ nav {
 }
 
 /* Feito para centrar o titulo corretamente com o menu de navegação */
-
+/*Define the title in CSS Grid and Flexbox */
 .title {
     grid-area: title;
     background-color: grey;
@@ -99,7 +105,6 @@ nav {
 }
 
 /* Menu de CSS Grid */
-
 body {
     display: grid;
     width: 100%;
@@ -114,7 +119,6 @@ body {
 }
 
 /* Align all text in the planet pages at the center */
-
 body > * {
     text-align: center; 
 }
@@ -163,6 +167,9 @@ nav .mainButton {
 }
 
 .biggerFont {
+    display: relative;
+    padding: 10%;
+
     font-size: 1.5em;
 }
 
@@ -225,14 +232,47 @@ nav > ul > li:hover > ul {
     background-color: #6f2232;
 }
 
+/*Utilização do CSS Flex para a galeria de Fotos de Planetas */
+.flex-planet-gallery {
+    display: flex;
+    
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/*Add some padding and borders between images */
+.flex-planet-gallery img {
+    padding: 0.5%;
+
+    border-style: dotted;
+    border-width: 5px;
+    border-color: grey;
+}
+
+/*Added an animation for the planets borders when hovered over */
+.flex-planet-gallery img:hover {
+    animation:colors 4s linear infinite;
+}
+
+@keyframes colors { 
+    0% { border-color: grey; } 
+    20% { border-color: white; } 
+    40% { border-color: brown; } 
+    60% { border-color: darkblue; } 
+    80% { border-color: darkgreen; } 
+    100% { border-color: grey; } 
+}
+
+
 /* Design responsivo para Telefone e para Tablet */
 @media only screen and (max-width: 768px) {
-    /*Definimos o CSS Grid de novo para o tablet e telefone */
 
+    /*Definimos o CSS Grid de novo para o tablet e telefone */
     body {
         display: grid;
         width: 100%;
-        height: 100vh;
+        height: 100vh;  
         grid-template-rows: 20% 15% 65%;
         grid-template-columns: 25% 75%;
         grid-template-areas:
@@ -242,11 +282,17 @@ nav > ul > li:hover > ul {
         background-color: #1a1a1d;
     }
 
+    /*Format the main image correctly */
     header > figure > img {
         width: 100%;
         height: 100%;
 
         padding-top: 0%;
+    }
+
+    /*Hide all images except one*/
+    header .extraImage {
+        display: none;
     }
 
     figure {
