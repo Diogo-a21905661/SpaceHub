@@ -147,6 +147,7 @@ main section ul {
     list-style-type: none; 
 
     padding: 5%;
+    font-size: 1.25em;
 }
 
 /* Dropdown menu */
@@ -328,7 +329,7 @@ main section form input {
 }
 
 /*Change the color of one of the form questions */
-main section form select {
+main section form select, main section form select option {
     color: black;
 }
 
