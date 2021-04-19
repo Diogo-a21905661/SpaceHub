@@ -11,24 +11,26 @@
 </head>
 <body>
     <aside class="title">
-        <h1>Earth</h1>
+        <h1>About</h1>
     </aside>
     <header>
         <figure>
-            <img src="images/wordcloudSolarSystem.jpg" alt="Wordcloud about the Solar System" max-width="100%" height="100%">
-            <figcapton>Wordcloud of the Solar System</figcapton>
-        </figure>   
-
-        <figure class="extraImage">
             <img src="images/solarSystemAbout.jpg" alt="Solar System" width="100%" height="100%">
-            <figcapton>Solar System</figcapton>
+            <figcaption>Solar System</figcaption>
         </figure>   
     </header>
 
     <main>
         <section>
+            <h3>Techniques Used (About)</h3>
+            <p>To make this website, we depended mostly on the use of the CSS property "position: absolute", especially for the Hub page, and the CSS Grid and Flexbox layout, for the rest of the pages.</p>
+            <p>To make the Hub, we had to use the position absolute to put the planets, and their names, in the position we wanted them to be in. To make it so that they were in the same position no matter what screen we were in, we used the "%" values to change their "top" and "left" values, which are the properties we used to put the planets in their place.</p>
+            <p>To make the pages, we had to focus on the CSS Grid, and how we would move them depending on if they´re on mobile or if they´re on laptop. For that we just had to define the different sections of the page, including the "title", which represents the title of the page, and the "header", which are the images to the left.</p>
+        </section>
+
+        <section>
             <h3>Planet Gallery</h3>
-            <p>The most beautiful pictures of our solar system, all in one accessible gallery!</p>
+            <p>The most beautiful pictures of the planets of our solar system, all in one accessible gallery!</p>
 
             <section class="flex-planet-gallery"> 
                 <img src="images/sun.jpg" alt="Picture of Sun" width="50%" height="100%">
@@ -41,27 +43,198 @@
 
         <section>
             <h3>Wordcloud</h3>
-            <p>A bonus wordcloud, with added links to each page, based on the planets, on top of the words!</p>
+           
+            <svg>
+                <a href="index.html">
+                    <image href="images/wordcloudSolarSystem.jpg" width="100%" height="100%"></image>
+                </a>
+            </svg>
+        </section>  
 
-            <figure></figure>
-                <svg>
-                    <a href="index.html">
-                        <image href="images/wordcloudSolarSystem.jpg" width="100%" height="100%"></image>
-                    </a>
-                    <a href="local.html">
-                        <polygon opacity="0.01" points="104,24 141,34 123,126 92,117"/>
-                    </a>
-                    <a href="multimedia.html">
-                        <polygon opacity="0.01" points="138,56 183,57 215,82 134,81"/>
-                    </a>
-                    <a href="info.html">
-                        <polygon opacity="0.01" points="142,31 171,32 172,56 138,56"/>
-                    </a>
-                    <a href="quizz.html">
-                        <polygon opacity="0.01" points="134,82 196,82 162,140 131,113"/>
-                    </a>
-                </svg>
+        <section>
+            <h3>Videos</h3>
+            <p>Showcase of various videos about the website and about our solar system.</p>
+
+            <figure max-width="100%" height="100%">
+                <iframe width="60%" height="300" src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player about Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>(Video about the Website)</figcaption>
             </figure>
+
+            <figure max-width="100%" height="100%">
+                <iframe width="60%" height="300" src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player about Solar System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>(Video about the Solar System)</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Appreciation Form</h3>
+            <p>Although this form is not required, we would appreciate it if you could please fill how you felt about the website.</p>
+
+            <form method="POST" action="mailto:diodoaraujo@gmail.com">
+                <fieldset width="50%">
+                    <p>(These questions range from 1 to 5, 1 being the worst review you can give, and 5 being the highest)</p>
+    
+                    <p>Did you enjoy the way the website was presented?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="enjoyRate" value="1">
+                    <input type="radio" name="enjoyRate" value="2">
+                    <input type="radio" name="enjoyRate" value="3">
+                    <input type="radio" name="enjoyRate" value="4">
+                    <input type="radio" name="enjoyRate" value="5">
+                    
+                    <p>Was the Hub presented in an original and/or interesting way?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="hubRate" value="1">
+                    <input type="radio" name="hubRate" value="2">
+                    <input type="radio" name="hubRate" value="3">
+                    <input type="radio" name="hubRate" value="4">
+                    <input type="radio" name="hubRate" value="5">
+                    
+                    <p>Did you enjoy the information we had about the planets?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="infoRate" value="1">
+                    <input type="radio" name="infoRate" value="2">
+                    <input type="radio" name="infoRate" value="3">
+                    <input type="radio" name="infoRate" value="4">
+                    <input type="radio" name="infoRate" value="5">
+
+                    <p>Did you learn more about the planets and their distinguishing features?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="distinctRate" value="1">
+                    <input type="radio" name="distinctRate" value="2">
+                    <input type="radio" name="distinctRate" value="3">
+                    <input type="radio" name="distinctRate" value="4">
+                    <input type="radio" name="distinctRate" value="5">
+
+                    <p>Was the website presented in an appealing way?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="appealRate" value="1">
+                    <input type="radio" name="appealRate" value="2">
+                    <input type="radio" name="appealRate" value="3">
+                    <input type="radio" name="appealRate" value="4">
+                    <input type="radio" name="appealRate" value="5">
+                    
+                    <p>Was the color scheme presentable and preety?</p>
+                    <label>Rating :</label>
+                    <input type="radio" name="colorRate" value="1">
+                    <input type="radio" name="colorRate" value="2">
+                    <input type="radio" name="colorRate" value="3">
+                    <input type="radio" name="colorRate" value="4">
+                    <input type="radio" name="colorRate" value="5">
+                </fieldset>
+                
+                <fieldset>
+                    <p>How much did you enjoy the Website?</p>
+                    <select name="websiteRate" size="1"color>
+                        <option value="Awful">Awful!</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre" selected>Mediocre</option>
+                        <option value="Good">Good</option>
+                        <option value="Excellent">Excellent!</option>
+                    </select>
+                </fieldset>
+
+                <input type="image" src="images/input.png" alt="submitForm"  width="15%">
+                <p>(Ao selecionar este botão, todos os dados nesta página, ou seja, os dados que foram inseridos no formulário, irão ser transmitidos para um endereço emails especificado)</p> 
+            </form>
+        </section>
+
+        <section>
+            <h3>Inventory Table</h3>
+            <p>This table contains the number of pages, images, links, videos and animations that the website contains.</p>
+
+            <center><table summary="Inventory Table" cellspacing="3" col>
+                <caption>
+                    Inventory Table
+                </caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2"><b>Demografia</b></th>
+                        <th>População</th>
+                        <th>9.7 milhões</th>
+                    </tr>
+                    <tr>
+                        <th>Densidade Populacional</th>
+                        <th>16 257 hab./km²</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="3"><b>Geografia</b></th>
+                        <th>Área</th>
+                        <th>605.21 km²</th>
+                    </tr>
+                    <tr>
+                        <th>Região</th>
+                        <th>Seoul</th>
+                    </tr>
+                    <tr>
+                        <th>Pais</th>
+                        <th>Coreia do Sul</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Simbolos Nacionais</th>
+                        <th>Passaro</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Oriental_magpie" target="_blank">Magpie Coreano</a></th>
+                    </tr>
+                    <tr>
+                        <th>Cor</th>
+                        <th>Vermelho Seoul</th>
+                    </tr>
+                    <tr>
+                        <th>Flor</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Forsythia" target="_blank">Forsythia</a></th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Website</th>
+                        <th colspan="2"><a href="http://english.seoul.go.kr/" target="_blank">http://english.seoul.go.kr/</a></th>
+                    </tr>
+                </tfoot>
+            </table></center>
+        </section>
+
+        <section>
+            <h3>External Links</h3>
+            <p>List of external links used in the making of this website.</p>
+            <p>All the links about the planets were also used, but will be kept out for the sake of simplicity.</p>
+
+            <ul>
+                <li><a href="">National Geographic</a>;</li>
+                <li><a href="https://en.wikipedia.org/wiki/Solar_System">Wikipedia</a>;</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Website Map</h3>
+
+            <figure>
+                <img src="images/treeMap.png" alt="Map of Website" width="75%" height="75%">
+                <figcaption>(Map of the Website)</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Layouts</h3>
+            <p>Showcase of the CSS Grid and Flexbox layout used for these pages.</p>
+
+            <section>
+                <p>The title is set to the top left corner, as can be seen in this page. The nav is the navigation menu, the header is the images used and the main is the main content of the website.</p>
+                <figure>
+                    <img src="images/layoutPC.png" alt="Layout for PC" width="50%" height="50%">
+                    <figcaption>(Layout for PC)</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <p>In the mobile version of the website, the Title now ocuppies the top part of the Grid, occupying 20% of the page. The header is now much smaller, staying next to the navigation menu.</p>
+                <p>The main content is now also 100% of the website seen below the navigation menu and the image, so that mobile users can see the content of the website better.</p>
+                <figure>
+                    <img src="images/layoutTabletMobile.png" alt="Layout for Tablet and Mobile" width="50%" height="50%">
+                    <figcaption>(Layout for Tablet and Mobile)</figcaption>
+                </figure>
+            </section>
         </section>
     </main>
 
