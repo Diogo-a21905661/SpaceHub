@@ -298,6 +298,7 @@ h1, header {
     }
 
     aside {
+        display: none;
         position: absolute;
 
         top: 13.5%;
@@ -520,5 +521,5 @@ h1, header {
         display: block;
     }
 
-    /* End of CSS Files for the HUB and for Planets */
+    /* End of Mobile CSS Files for the HUB and for Planets */
 }

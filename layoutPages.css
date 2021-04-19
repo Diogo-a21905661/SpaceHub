@@ -143,6 +143,9 @@ body > * {
 
 /*Define external links menu */
 main section ul {
+    text-decoration: none; 
+    list-style-type: none; 
+
     padding: 5%;
 }
 
@@ -333,22 +336,26 @@ main section form select {
 main section table {
     position: relative;
 
-    width: 75%;
-    height: 100%;
+    width: 100%;
 
     background-color: grey;
 }
 
 /*Format the table columns and lines correctly */
 table, th, tr {
-    color: lightgrey;
+    color: black;
 
     border: 1px solid black;
 }
 
+/*Added some padding for the table text*/
+th, tr {
+    padding: 0.5%;
+}
+
 /*Define table caption */
 caption {
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 2%;
 
     color: lightgrey;
